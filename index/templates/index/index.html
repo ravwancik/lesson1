@@ -1,0 +1,15 @@
+{% extends 'index/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="images">
+    <img src="{% static 'index/images/rasm.jpg' %}" alt="404">
+
+</div>
+
+{% for item in menu %}
+<h1>{{item.title }}</h1>
+{% endfor%}
+
+
+{% endblock %}
